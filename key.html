@@ -1,0 +1,20 @@
+<html>
+<body>
+<center><h2>Keyboard event</h2></center>
+<p>change the color</p>
+<input type="text" id="de" onkeydown="keydown()" onkeyup="keyup()">
+<p>whenever a charector key is typed inside the text field an alert is displayed</p>
+<input type="text" onkeypress="keypress()">
+<script>
+function keydown(){
+document.getElementById("de").style.backgroundColor="pink";
+}
+funtion keyup(){
+document.getElementById("de").style.backgroundColor="yellow";
+}
+funtion keypress(){
+alert("A charector key is typed in the text field and alert to be displayed");
+}
+</script>
+</body>
+</html> 

@@ -1,0 +1,54 @@
+<html>
+<body bgcolor="yellow"><head><h1><center>Arithmetic Operations</h1></center></body>
+<head>
+<script>
+function add()
+{
+	var a,b,c;
+	a=parseInt(v1.value);
+	b=parseInt(v2.value);
+	c=a+b;
+	v3.value=c;
+}
+function sub()
+{
+	var a,b,c;
+	a=parseInt(v1.value);
+	b=parseInt(v2.value);
+	c=a-b;
+	v4.value=c;
+}
+function mul()
+{
+	var a,b,c;
+	a=parseInt(v1.value);
+	b=parseInt(v2.value);
+	c=a*b;
+	v5.value=c;
+}
+function div()
+{
+	var a,b,c;
+	a=parseInt(v1.value);
+	b=parseInt(v2.value);
+	c=a/b;
+	v6.value=c;
+}
+</script>
+</head>
+<body>
+Enter the First Number :<input id="v1"><br>
+Ente the Second Number :<input id="v2"><br>
+Addition of two Numbers :<input id="v3">
+<input type="Button" value="Addition" onclick=add()><br>
+
+Subtraction of two Numbers :<input id="v4">
+<input type="Button" value="Subtraction" onclick=sub()><br>
+
+Multiplication of two Numbers :<input id="v5">
+<input type="Button" value="Multiplication" onclick=mul()><br>
+
+Divison of two Numbers :<input id="v6">
+<input type="Button" value="Divison" onclick=div()><br>
+</body>
+</html>

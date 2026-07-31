@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Current Date and Time</title>
+</head>
+<body bgcolor="pink">
+	<center><h1>Current Date and Time</center></h1>
+	<p id="datetime"></p>
+	<script>
+	function update(){
+		const now=new Date();
+		const d=now.toLocaleString();
+		document.getElementById("datetime").textContent=d;
+	}
+update();
+	setInterval(update,1000);
+</script>
+</body>
+</html>

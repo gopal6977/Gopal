@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>
+var numslides=0;currentslide=0;
+var slides=new Array();
+function slideshow()
+{
+	imgs=document.getElementsByTagName("img");
+	for(i=0;i<imgs.length;i++)
+	{
+		if(imgs[i].className!="slide")continue;
+		slides[numslides]=imgs[i];
+		if(numslides==0)
+		{
+			imgs[i].style.display="block";
+		}
+		else
+		{
+			imgs[i].style.display="none";
+		}
+		imgs[i].onclick=nextslide;
+		numslides++;
+	}
+}
+function nextslide()
+{
+	slides[currentslide].style.display="none";
+	currentslide++;
+	if(currentslide>=numslides)currentslide=0;
+	slides[currentslide].style.display="block";
+}
+</script>
+</head>
+<body bgcolor="yellow">
+<h2> image slideshow</h2>
+<img class="slide" src="1.jpg" width="200" height="100">
+<img class="slide" src="2.jpg" width="200" height="100">
+<img class="slide" src="3.jpg" width="200" height="100">
+<img class="slide" src="4.jpg" width="200" height="100">
+<img class="slide" src="5.jpg" width="200" height="100">
+<img class="slide" src="6.jpg" width="200" height="100">
+<img class="slide" src="7.jpg" width="200" height="100">
+<img class="slide" src="8.jpg" width="200" height="100">
+<img class="slide" src="9.jpg" width="200" height="100">
+<img class="slide" src="10.jpg" width="200" height="100">
+<img class="slide" src="11.jpg" width="200" height="100">
+<img class="slide" src="12.jpg" width="200" height="100">
+<p>click the image</p>
+<input type="button" value="slideshow" onclick="slideshow()">
+</body>
+</htm> 

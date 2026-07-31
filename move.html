@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+var x=100,y=150;
+function pos(dx,dy){
+	x+=20*dx;
+	y+=20*dy;
+	obj=document.getElementById("square");
+	obj.style.top=y;
+	obj.style.left=x;
+}
+</script>
+<style>
+#square{
+	position:absolute;
+	top:150;
+	left:100;
+	width:100;
+	height:100;
+	background-color:yellow;
+}
+</style>
+</head>
+<body>
+<h2>Movable layer</h2>
+<input type="Button" value="<-Left" onclick="pos(-1,0)"><br><br>
+<input type="Button" value="Right->" onclick="pos(1,0)"><br><br>
+<input type="Button" value="up" onclick="pos(0,-1)"><br><br>
+<input type="Button" value="down" onclick="pos(0,1)"><br><br>
+<div id="square">
+<p>This square moves by clicking buttons</p>
+</div>
+</body>
+</html>

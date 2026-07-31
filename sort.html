@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function sort()
+{
+var n,i,j;
+a=new Array(50);
+n=prompt("Enter no of names : ","");
+for(i=0;i<n;i++)
+a[i]=prompt("Enter names : ","");
+document.write("<br>"+"Given names are ");
+for(i=0;i<n;i++)
+document.write("<br>"+a[i]);
+for(i=0;i<n;i++)
+for(j=i+1;j<n;j++)
+if(a[i]>a[j])
+{
+t=a[i];
+a[i]=a[j];
+a[j]=t;
+}
+document.write("<br>"+"Names in sorted order are ");
+for(i=0;i<n;i++)
+document.write("<br>"+a[i]);
+}
+</script>
+</head>
+<body bgcolor="pink">
+<h1 align="center">Sorting names in alphabhetic order</h1>
+<input type="button" value="sorting" onclick=sort()></br>
+</body>
+</html>

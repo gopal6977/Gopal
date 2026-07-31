@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>String Functions</title>
+</head>
+<body bgcolor="peach">
+<center><h1>String Functions Example</center></h1>
+<label for="inputstring">Enter a String </label>
+<input type="text" id="inputstring">
+<button onclick="operations()">perform operations</button>
+<h3>Result :</h3>
+<p>Original string  :<span id="originalString"></span></p>
+<p>Upper Case        :<span id="uppercase"></span></p>
+<p>Lower Case        :<span id="lowercase"></span></p>
+<p>Reverse           :<span id="reversed"></span></p>
+<p>length            :<span id="length"></span></p>
+<p>First Character   :<span id="firstchar"></span></p>
+<p>Last  Character   :<span id="lastchar"></span></p>
+<script>
+	function operations(){
+		const input=document.getElementById("inputstring").value;
+		const uppercase=input.toUpperCase();
+		const lowercase=input.toLowerCase();
+		const reversed=input.split('').reverse().join('');
+		const length=input.length;
+		const firstchar=input.charAt(0);
+		const lastchar=input.charAt(length-1);
+			
+		document.getElementById("originalString").textContent=input;
+		document.getElementById("uppercase").textContent=uppercase;
+		document.getElementById("lowercase").textContent=lowercase;
+		document.getElementById("reversed").textContent=reversed;
+		document.getElementById("length").textContent=length;
+		document.getElementById("firstchar").textContent=firstchar;
+		document.getElementById("lastchar").textContent=lastchar;
+		}
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+function create()
+{
+	newwindow=window.open(" "," my  window",width=200,height=100);
+	newwindow.document.write("<p> It is my new window</p>");
+
+}
+function closenew(){
+	newwindow.close();
+}
+function closemain(){
+	window.close();
+}
+function resize(){
+	newwindow.resizeTo(w.value,h.value);
+}
+</script>
+</head>
+<body bgcolor="yellow">
+<h2>Java Script windows operation </h2>
+<input  type="button"  value="open new window" onClick="create()"><br><br>
+<input  type="button"  value="close new window" onClick="closenew()"><br><br>
+<input  type="button"  value="close main window "  onClick="closemain()"><br><br>
+width:<input type="text" id="w"><br><br>
+height=<input type="text" id="h"><br><br>
+<input type="button" value="resize  window" onClick="resize()"><br><br>
+</body>
+</html>

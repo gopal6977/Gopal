@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function g()
+{
+	va a,b,c;
+	a=parseInt(v1.value);
+	b=parseInt(v2.value);
+	c=parseInt(v3.value);
+	if(a>b&&a>c){
+		d=a;
+	}
+	if(b>a&&b>c){
+		d=b;
+	}
+	if(c>a&&c>b){
+		d=c;
+	}
+	v4.value=d;
+	//alert("Greater than="+c");
+	//document.write("Greaterthan="d");
+}
+</script>
+</head>
+</body>
+Enter First no:<input id="v1"><br>
+Enter Second no:<input id="v2"><br>
+Enter Third no:<input id="v3"><br>
+<input type="Button" value="Greater" onclick=g()><br>
+greater nos;<input id="v4"><br>
+</body>
+</html>
